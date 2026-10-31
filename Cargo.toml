@@ -1,0 +1,22 @@
+[workspace]
+members = ["mods/template", "mods/template/pack"]
+default-members = ["mods/template"]
+resolver = "3"
+
+[workspace.package]
+version = "4.2.0"
+edition = "2024"
+rust-version = "1.99.0"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+mod-api = { git = "https://github.com/cinnabar-mc/cinnabar", rev = "f64924fbb27004a1f785a2c131de9531fbcd252a" }
+
+[profile.release]
+# Callback fuel is bounded by the host; optimize execution rather than file size.
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "debuginfo"

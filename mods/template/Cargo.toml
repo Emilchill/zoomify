@@ -1,0 +1,15 @@
+[package]
+name = "cinnabar-mod-template"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license = "LGPL-3.0-or-later"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+mod-api.workspace = true
+serde.workspace = true
+serde_json.workspace = true
