@@ -1,5 +1,7 @@
 # Zoomify for Cinnabar
 
+**⬇️ Download:** [`zoomify.wasm`](https://github.com/Emilchill/zoomify/raw/main/download/zoomify.wasm) (Cinnabar v0.1.31 or newer). Import it in **Settings → Mods → Import mod...**
+
 A Cinnabar mod port of [Zoomify](https://github.com/isXander/Zoomify) 2.16.3 by isXander: a smooth,
 configurable zoom with transitions, step zoom, relative sensitivity and presets.
 
